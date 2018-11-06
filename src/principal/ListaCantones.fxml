@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="currentPanel" minHeight="694.0" prefHeight="694.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.ContListaCantones">
+   <children>
+      <VBox layoutX="900.0" prefHeight="654.0" prefWidth="188.0" style="-fx-background-color: #dbdbdb;">
+         <children>
+            <ImageView fx:id="escudoCostaRica" fitHeight="207.0" fitWidth="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="439px-Coat_of_arms_of_Costa_Rica.svg.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" onAction="#mostrarMapaPrincipal" prefHeight="46.0" prefWidth="188.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Mapa Principal" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light Italic" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#mostrarListaProvincias" prefHeight="46.0" prefWidth="188.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Lista Provincias" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light Italic" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="56.0" onAction="#mostrarListaCantones" prefHeight="46.0" prefWidth="188.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Lista Cantones" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light Italic" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="10.0" layoutY="103.0" onAction="#mostrarBuscarCanton" prefHeight="46.0" prefWidth="188.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Buscar Cantón" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Light Italic" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXButton buttonType="RAISED" layoutX="900.0" layoutY="647.0" onAction="#mostrarInformacion" prefHeight="46.0" prefWidth="188.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Información" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light Italic" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <TableView fx:id="tablaCantones" layoutX="24.0" layoutY="82.0" prefHeight="588.0" prefWidth="712.0">
+         <columns>
+            <TableColumn fx:id="colNombre" prefWidth="120.80001831054688" text="Nombre" />
+            <TableColumn fx:id="colCabecera" prefWidth="130.40000915527344" text="Cabecera" />
+            <TableColumn fx:id="colAlcalde" prefWidth="141.5999755859375" text="Alcalde" />
+            <TableColumn fx:id="colPartidoPolitico" minWidth="2.4000244140625" prefWidth="92.0" text="Partido Político" />
+            <TableColumn fx:id="colPoblacion" prefWidth="135.20001220703125" text="Población" />
+            <TableColumn fx:id="colArea" prefWidth="95.99993896484375" text="Área" />
+         </columns>
+      </TableView>
+      <Text fill="#575757" layoutX="405.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de Cantones">
+         <font>
+            <Font name="Roboto Light Italic" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#3c3c3c" layoutX="772.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ordenar por:">
+         <font>
+            <Font name="Roboto Light Italic" size="18.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="749.0" layoutY="474.0" onAction="#ordPorNombre" prefHeight="35.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Nombre" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light Italic" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="749.0" layoutY="514.0" onAction="#ordPorAlcalde" prefHeight="35.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Alcalde" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light Italic" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="749.0" layoutY="554.0" onAction="#ordPorPartidoPolitico" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Partido Político" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light Italic" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="749.0" layoutY="594.0" onAction="#ordPorPoblacion" prefHeight="35.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Población" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light Italic" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="749.0" layoutY="634.0" onAction="#ordPorArea" prefHeight="35.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Área" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light Italic" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXButton>
+   </children>
+</AnchorPane>
