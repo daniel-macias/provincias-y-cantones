@@ -1,13 +1,23 @@
 package principal;
 
 import java.util.ArrayList;
-
-public class Provincia {
+import java.io.*;
+import java.util.*;
+import java.util.Collections;
+public class Provincia implements Comparator<Canton> {
     private String nombre;
     private Canton cabecera;
     private ArrayList<Canton> listaDeCantones;
     private int poblacion;
     private int area;
+
+    public int compare(Canton o1, Canton o2){
+        return o1.getNombre().compareTo(o2.getNombre());
+    }
+
+    public int compare2(Canton o1, Canton o2){
+        return o2.getNombre().compareTo(o1.getNombre());
+    }
 
     public Provincia(String nombre){
         this.nombre = nombre;
@@ -34,6 +44,15 @@ public class Provincia {
             }
         }
     }
+
+    public void Ascendingsort(){
+        Collections.sort(this.listaDeCantones,this::compare);
+    }
+
+    public void Descendingsort(){
+        Collections.sort(this.listaDeCantones,this::compare2);
+    }
+
 
     public ArrayList<Canton> getListaDeCantones() {
         return listaDeCantones;
