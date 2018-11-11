@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import javax.swing.plaf.basic.BasicArrowButton;
 import javax.xml.catalog.Catalog;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main extends Application {
 
@@ -22,6 +23,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
+        ArrayList<Provincia> Provincias=new ArrayList<Provincia>();
         //Cantones de Limon
         ArrayList <Canton> LimonList=new ArrayList<Canton>();
         Canton Guacimo=new Canton("Guacimo", "https://es.wikipedia.org/wiki/Cant%C3%B3n_de_Gu%C3%A1cimo");
@@ -218,6 +220,28 @@ public class Main extends Application {
         SanJoseList.add(VasquezC);
         Provincia SanJose=new Provincia("San José");
         SanJose.setListaDeCantones(SanJoseList);
+
+        //ArrayList de Provincias
+        Provincias.add(Limon);
+        Provincias.add(Puntarenas);
+        Provincias.add(Guanacaste);
+        Provincias.add(Heredia);
+        Provincias.add(Cartago);
+        Provincias.add(Alajuela);
+        Provincias.add(SanJose);
+
+        //Recorrido de las provincias
+        for (Provincia i:Provincias) {
+            i.Descendingsort();
+        }
+
+        for (Provincia i:Provincias) {
+            ArrayList<Canton> probando=i.getListaDeCantones();
+            for(Canton c:probando){
+                System.out.println(c.getNombre());
+            }
+            System.out.println("");
+        }
 
         System.out.println(LectorJSOUP.sacarInformacion("https://es.wikipedia.org/wiki/Cant%C3%B3n_de_San_Jos%C3%A9"));
 
