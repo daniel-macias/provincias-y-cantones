@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
           <root url="jar://D:/libraries/jsoup-1.11.3.jar!/" />
@@ -19,7 +19,26 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../jfoenix-9.0.6.jar!/" />
+          <root url="jar://D:/../jfoenix-9.0.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Downloads/JFoenix-master.zip!/JFoenix-master/demo/src/main/java" />
+          <root url="jar://$USER_HOME$/Downloads/JFoenix-master.zip!/JFoenix-master/jfoenix/src/main/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/libraries/jfoenix-9.0.6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

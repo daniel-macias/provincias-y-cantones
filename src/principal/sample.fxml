@@ -81,7 +81,7 @@
                   </JFXButton>
                </children>
             </VBox>
-            <JFXButton buttonType="RAISED" layoutX="409.0" layoutY="332.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="San José" textFill="WHITE">
+            <JFXButton accessibleText="San José" buttonType="RAISED" layoutX="409.0" layoutY="332.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="San José" textFill="WHITE">
                <font>
                   <Font name="Roboto Light Italic" size="18.0" />
                </font>
@@ -89,7 +89,7 @@
                   <Insets />
                </opaqueInsets>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="537.0" layoutY="314.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Cartago" textFill="WHITE">
+            <JFXButton accessibleText="Cartago" buttonType="RAISED" layoutX="537.0" layoutY="314.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Cartago" textFill="WHITE">
                <font>
                   <Font name="Roboto Light Italic" size="18.0" />
                </font>
@@ -97,7 +97,7 @@
                   <Insets />
                </opaqueInsets>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="338.0" layoutY="453.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Puntarenas" textFill="WHITE">
+            <JFXButton accessibleText="Puntarenas" buttonType="RAISED" layoutX="338.0" layoutY="453.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Puntarenas" textFill="WHITE">
                <font>
                   <Font name="Roboto Light Italic" size="18.0" />
                </font>
@@ -105,7 +105,7 @@
                   <Insets />
                </opaqueInsets>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="162.0" layoutY="189.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Guanacaste" textFill="WHITE">
+            <JFXButton accessibleText="Guanacaste" buttonType="RAISED" layoutX="162.0" layoutY="189.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Guanacaste" textFill="WHITE">
                <font>
                   <Font name="Roboto Light Italic" size="18.0" />
                </font>
@@ -113,7 +113,7 @@
                   <Insets />
                </opaqueInsets>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="365.0" layoutY="163.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Alajuela" textFill="WHITE">
+            <JFXButton accessibleText="Alajuela" buttonType="RAISED" layoutX="365.0" layoutY="163.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Alajuela" textFill="WHITE">
                <font>
                   <Font name="Roboto Light Italic" size="18.0" />
                </font>
@@ -121,7 +121,7 @@
                   <Insets />
                </opaqueInsets>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="466.0" layoutY="206.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Heredia" textFill="WHITE">
+            <JFXButton accessibleText="Heredia" buttonType="RAISED" layoutX="466.0" layoutY="206.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Heredia" textFill="WHITE">
                <font>
                   <Font name="Roboto Light Italic" size="18.0" />
                </font>
@@ -129,7 +129,7 @@
                   <Insets />
                </opaqueInsets>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="651.0" layoutY="349.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Limón" textFill="WHITE">
+            <JFXButton accessibleText="Limón" buttonType="RAISED" layoutX="651.0" layoutY="349.0" ripplerFill="WHITE" style="-fx-background-color: #4c64b5;" text="Limón" textFill="WHITE">
                <font>
                   <Font name="Roboto Light Italic" size="18.0" />
                </font>

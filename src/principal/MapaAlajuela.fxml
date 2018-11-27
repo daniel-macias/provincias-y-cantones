@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="panel" prefHeight="700.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.ContMapaAlajuela">
+   <children>
+      <ImageView fitHeight="714.0" fitWidth="977.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../mapaAlajuela.PNG" />
+         </image>
+      </ImageView>
+      <Text fill="#545454" layoutX="969.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Elegir Cantón">
+         <font>
+            <Font name="Roboto Italic" size="19.0" />
+         </font>
+      </Text>
+      <JFXButton accessibleText="Alajuela" buttonType="RAISED" layoutX="977.0" layoutY="48.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="1" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="San Ramón" buttonType="RAISED" layoutX="1024.0" layoutY="48.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="2" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Grecia" buttonType="RAISED" layoutX="977.0" layoutY="91.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="3" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="San Mateo" buttonType="RAISED" layoutX="1024.0" layoutY="91.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="4" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Atenas" buttonType="RAISED" layoutX="978.0" layoutY="134.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="5" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Naranjo" buttonType="RAISED" layoutX="1025.0" layoutY="134.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="6" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Palmares" buttonType="RAISED" layoutX="978.0" layoutY="177.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="7" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Poás" buttonType="RAISED" layoutX="1025.0" layoutY="177.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="8" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Orotina" buttonType="RAISED" layoutX="978.0" layoutY="221.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="9" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="San Carlos" buttonType="RAISED" layoutX="1025.0" layoutY="221.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="10" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Zarcero" buttonType="RAISED" layoutX="978.0" layoutY="265.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="11" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Valverde Vega" buttonType="RAISED" layoutX="1025.0" layoutY="265.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="12" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Upala" buttonType="RAISED" layoutX="978.0" layoutY="308.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="13" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Los Chiles" buttonType="RAISED" layoutX="1025.0" layoutY="308.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="14" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="Guatuso" buttonType="RAISED" layoutX="979.0" layoutY="351.0" prefHeight="34.0" prefWidth="34.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="15" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="976.0" layoutY="643.0" onAction="#regresarAMenu" prefHeight="34.0" prefWidth="90.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

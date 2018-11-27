@@ -4,11 +4,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -29,6 +31,31 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+
+        for(Node elem : currentPanel.getChildren()) {
+            if (elem.getAccessibleText() != null) {
+                elem.addEventHandler(MouseEvent.MOUSE_CLICKED, (e) -> {
+                    System.out.println(elem.getAccessibleText());
+                    if(elem.getAccessibleText().equals("San José")){
+                        cambiarEscenaA("MapaSanJose.fxml");
+                    }else if(elem.getAccessibleText().equals("Alajuela")){
+                        cambiarEscenaA("MapaAlajuela.fxml");
+                    }else if(elem.getAccessibleText().equals("Cartago")){
+                        cambiarEscenaA("MapaCartago.fxml");
+                    }else if(elem.getAccessibleText().equals("Heredia")){
+                        cambiarEscenaA("MapaHeredia.fxml");
+                    }else if(elem.getAccessibleText().equals("Guanacaste")){
+                        cambiarEscenaA("MapaGuanacaste.fxml");
+                    }else if(elem.getAccessibleText().equals("Puntarenas")){
+                        cambiarEscenaA("MapaPuntarenas.fxml");
+                    }else if(elem.getAccessibleText().equals("Limón")){
+                        cambiarEscenaA("MapaLimon.fxml");
+                    }
+                });
+            }
+
+        }
 
     }
 
@@ -103,6 +130,21 @@ public class Controller implements Initializable {
     @FXML
     void mostrarMapaPrincipal(ActionEvent event) {
         System.out.println("Ya está en esta página");
+    }
+
+    void cambiarEscenaA(String s){
+        try {
+            Parent sigScn = (AnchorPane) FXMLLoader.load(getClass().getResource(s));
+
+            Scene newScene = new Scene(sigScn);
+
+            Stage curStage = (Stage) currentPanel.getScene().getWindow();
+
+            curStage.setScene(newScene);
+        }catch (IOException ex){
+            System.out.println("Error al cargar la otras escena");
+            System.out.println(ex.getCause());
+        }
     }
 
 }

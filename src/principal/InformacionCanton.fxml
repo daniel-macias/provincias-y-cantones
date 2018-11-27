@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="panel" prefHeight="700.0" prefWidth="1088.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="principal.ContInformacionCanton">
+   <children>
+      <Text fx:id="nombreCanton" disable="true" layoutX="291.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del Cantón" textAlignment="CENTER" wrappingWidth="506.5999755859375">
+         <font>
+            <Font name="Roboto Light" size="36.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="informacion" editable="false" layoutX="39.0" layoutY="72.0" prefHeight="597.0" prefWidth="658.0" wrapText="true" />
+      <ImageView fx:id="escudo" fitHeight="348.0" fitWidth="354.0" layoutX="714.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ubicacion" fitHeight="242.0" fitWidth="375.0" layoutX="705.0" layoutY="428.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton buttonType="RAISED" layoutX="986.0" layoutY="653.0" onAction="#regresarAMenu" prefHeight="34.0" prefWidth="90.0" ripplerFill="WHITE" style="-fx-background-color: #003399;" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black Italic" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
